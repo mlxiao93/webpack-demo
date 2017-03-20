@@ -33,7 +33,7 @@ module.exports = webpackMerge(base, {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: "bundle.[chunkhash].css"
+      filename: "bundle.[contenthash].css"
     }),
     new UglifyJSPlugin({
       compress: {
